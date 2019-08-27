@@ -7,6 +7,15 @@ https://nn.readthedocs.io/en/rtd/criterion/index.html#criterions
 
 
 ==================================================
+Tuesday, August 27, 2019 Fold
+
+
+
+
+EndFold
+
+
+==================================================
 Monday, August 19, 2019 Fold
 
 https://ai.googleblog.com/2019/08/joint-speech-recognition-and-speaker.html
