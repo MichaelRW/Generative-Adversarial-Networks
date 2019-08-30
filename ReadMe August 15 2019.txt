@@ -6,11 +6,20 @@ https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html#elu
 https://nn.readthedocs.io/en/rtd/criterion/index.html#criterions
 
 
+
+==================================================
+Friday, August 30, 2019 Fold
+
+https://github.com/soumith/ganhacks
+
+EndFold
+
+
 ==================================================
 Tuesday, August 27, 2019 Fold
 
-
-
+https://github.com/vdumoulin/conv_arithmetic
+	See Vincent Dumoulin, Franceso Visin - "A guide to convolution arithmetic for deep learning (BibTex)"
 
 EndFold
 
