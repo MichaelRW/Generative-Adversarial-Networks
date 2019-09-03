@@ -6,6 +6,28 @@ https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html#elu
 https://nn.readthedocs.io/en/rtd/criterion/index.html#criterions
 
 
+==================================================
+Tuesday, September 3, 2019 Fold
+
+conda install -c pytorch torchvision
+
+https://github.com/junyanz/CycleGAN
+https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html#installing-packages
+https://anaconda.org/pytorch/torchvision
+
+EndFold
+
+
+==================================================
+Monday, September 2, 2019 Fold
+
+https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+	-an excellent example of how to setup a very deep learning model
+
+EndFold
+
 
 ==================================================
 Friday, August 30, 2019 Fold

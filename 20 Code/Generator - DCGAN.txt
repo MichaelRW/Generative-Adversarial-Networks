@@ -1,0 +1,23 @@
+
+
+class Generator(nn.Module):
+
+    def __init__(self, ngpu):
+	
+	super(Generator, self).__init__()
+	self.ngpu = ngpu
+	
+	self.convT1 = deconv(nz, ngf*8, 4, 1, 0)
+	self.convT2 = deconv(ngf*8, ngf*4, 4, 2, 1)
+	self.convT3 = deconv(ngf*4, ngf*2, 4, 2, 1)
+	self.convT4 = deconv(ngf*2, ngf, 4, 2, 1)
+	
+	self.output = deconv(ngf, nc, 4, 2, 1, batch_norm=False)
+
+    def forward(self, input):
+		out = F.relu(self.convT1(input), inplace=True)
+		out = F.relu(self.convT2(out), inplace=True)
+		out = F.relu(self.convT3(out), inplace=True)
+		out = F.relu(self.convT4(out), inplace=True)
+
+		return F.tanh(self.output(out))

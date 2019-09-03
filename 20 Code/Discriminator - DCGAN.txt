@@ -1,0 +1,21 @@
+
+
+class Discriminator(nn.Module):
+
+    def __init__(self, ngpu):
+		super(Discriminator, self).__init__()
+        self.ngpu = ngpu
+		
+		self.conv1 = conv(nc, ndf, 4, 2, 1)
+		self.conv2 = conv(ndf, ndf * 2, 4, 2, 1)
+		self.conv3 = conv(ndf * 2, ndf * 4, 4, 2, 1)
+        self.conv4 = conv(ndf * 4, ndf * 8, 4, 2, 1)
+		self.output = conv(ndf * 8, 1, 4, 1, 0, batch_norm=False)
+		
+	def forward(self, input):
+		out = F.leaky_relu(self.conv1(input), inplace=True)
+		out = F.leaky_relu(self.conv2(out), inplace=True)
+		out = F.leaky_relu(self.conv3(out), inplace=True)
+		out = F.leaky_relu(self.conv4(out), inplace=True)
+
+		return F.sigmoid(self.output(out))
